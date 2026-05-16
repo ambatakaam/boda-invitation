@@ -727,16 +727,42 @@ Este día especial es el comienzo de un nuevo capítulo que queremos compartir j
 <!-- ═══════════════ AVISO ADULTOS ═══════════════ -->
 <div style="
   background: #13100d;
-  padding: 5rem 2rem;
+  padding: 0;
   text-align: center;
   border-top: 1px solid rgba(184,151,90,0.12);
   border-bottom: 1px solid rgba(184,151,90,0.12);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 ">
+  <!-- Foto izquierda -->
   <div style="
-    max-width: 480px;
-    margin: 0 auto;
-    border: 1px solid rgba(184,151,90,0.2);
-    padding: 3.5rem 2.5rem;
+    position: relative;
+    min-height: 420px;
+    overflow: hidden;
+  ">
+    <!-- 🔁 REEMPLAZA con tu foto -->
+    <img src="DSC03926.jpg" alt="Gisell & Danel" style="
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      filter: brightness(0.88) sepia(0.1);
+    ">
+    <div style="
+      position: absolute; inset: 0;
+      background: linear-gradient(to right, rgba(14,12,10,0.1), rgba(14,12,10,0.45));
+    "></div>
+  </div>
+
+  <!-- Texto derecha -->
+  <div style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 3rem;
+    border-left: 1px solid rgba(184,151,90,0.15);
   ">
     <span style="
       font-family: 'Cormorant Garamond', serif;
@@ -749,18 +775,17 @@ Este día especial es el comienzo de un nuevo capítulo que queremos compartir j
     ">Aviso importante</span>
 
     <div style="
-      width: 40px;
-      height: 1px;
+      width: 40px; height: 1px;
       background: linear-gradient(90deg, transparent, #b8975a, transparent);
       margin: 0 auto 2rem;
     "></div>
 
     <p style="
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(1.2rem, 4vw, 1.7rem);
+      font-size: clamp(1.1rem, 3vw, 1.55rem);
       font-weight: 300;
       font-style: italic;
-      line-height: 1.8;
+      line-height: 1.9;
       color: #f0e8dc;
       margin: 0;
     ">
@@ -769,13 +794,21 @@ Este día especial es el comienzo de un nuevo capítulo que queremos compartir j
     </p>
 
     <div style="
-      width: 40px;
-      height: 1px;
+      width: 40px; height: 1px;
       background: linear-gradient(90deg, transparent, #b8975a, transparent);
       margin: 2rem auto 0;
     "></div>
   </div>
 </div>
+
+<!-- responsive mobile -->
+<style>
+  @media(max-width: 640px) {
+    #aviso-grid { grid-template-columns: 1fr !important; }
+    #aviso-foto { min-height: 55vw !important; }
+    #aviso-texto { border-left: none !important; border-top: 1px solid rgba(184,151,90,0.15) !important; }
+  }
+</style>
 
 <!-- ═══════════════ TORNABODA ═══════════════ -->
 <section id="tornaboda">
@@ -886,77 +919,119 @@ Este día especial es el comienzo de un nuevo capítulo que queremos compartir j
   </div>
 </div>
 
-    <!-- ═══════════════ FOTO GALERÍA ═══════════════ -->
+
+
+<!-- ═══════════════ RSVP ═══════════════ -->
 <div style="
   background: #0e0c0a;
-  padding: 0;
+  text-align: center;
   border-top: 1px solid rgba(184,151,90,0.12);
   border-bottom: 1px solid rgba(184,151,90,0.12);
-  position: relative;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 ">
+  <!-- Texto izquierda -->
   <div style="
-    position: relative;
-    max-width: 720px;
-    margin: 5rem auto;
-    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 3rem;
+    border-right: 1px solid rgba(184,151,90,0.15);
   ">
-    <!-- Línea decorativa superior -->
+    <span style="
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(0.6rem, 1.8vw, 0.72rem);
+      letter-spacing: 0.45em;
+      text-transform: uppercase;
+      color: #b8975a;
+      display: block;
+      margin-bottom: 1.8rem;
+    ">Confirmación</span>
+
     <div style="
-      width: 1px;
-      height: 60px;
-      background: linear-gradient(to bottom, transparent, #b8975a);
-      margin: 0 auto 0;
+      width: 40px; height: 1px;
+      background: linear-gradient(90deg, transparent, #b8975a, transparent);
+      margin: 0 auto 2rem;
     "></div>
 
-    <!-- Marco con foto -->
-    <div style="
-      border: 1px solid rgba(184,151,90,0.25);
-      padding: 10px;
-      margin-top: 2rem;
-      position: relative;
-    ">
-      <!-- 🔁 REEMPLAZA el src con tu foto -->
-      <img
-        src="DSC03640.jpg"
-        alt="Gisell & Danel"
-          width: 100%;
-          display: block;
-          aspect-ratio: 3/2;
-          object-fit: cover;
-          filter: brightness(0.92) sepia(0.08);
-        "
-      >
-      <!-- Esquinas doradas decorativas -->
-      <div style="position:absolute;top:4px;left:4px;width:20px;height:20px;border-top:1px solid #b8975a;border-left:1px solid #b8975a;"></div>
-      <div style="position:absolute;top:4px;right:4px;width:20px;height:20px;border-top:1px solid #b8975a;border-right:1px solid #b8975a;"></div>
-      <div style="position:absolute;bottom:4px;left:4px;width:20px;height:20px;border-bottom:1px solid #b8975a;border-left:1px solid #b8975a;"></div>
-      <div style="position:absolute;bottom:4px;right:4px;width:20px;height:20px;border-bottom:1px solid #b8975a;border-right:1px solid #b8975a;"></div>
-    </div>
+    <p style="
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(2.4rem, 6vw, 3.8rem);
+      color: #f0e8dc;
+      line-height: 1.2;
+      margin: 0 0 1.6rem;
+    ">¿Nos acompañas?</p>
 
-    <!-- Línea decorativa inferior -->
+    <p style="
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.9;
+      color: #c9b89a;
+      margin: 0 0 2.5rem;
+    ">
+      Por favor confírmanos tu asistencia<br>
+      antes del <span style="color:#f0e8dc;">15 de noviembre</span>.
+    </p>
+
     <div style="
-      width: 1px;
-      height: 60px;
-      background: linear-gradient(to top, transparent, #b8975a);
-      margin: 2rem auto 0;
+      width: 40px; height: 1px;
+      background: linear-gradient(90deg, transparent, #b8975a, transparent);
+      margin: 0 auto 2.5rem;
+    "></div>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_oaEW4eHknz4pP-UpKcSjgi4o2bqudM5rcQT-vAEzWrcQGg/viewform?usp=publish-editor"
+      target="_blank" rel="noopener"
+      style="
+        display: inline-block;
+        padding: 0.9rem 2.8rem;
+        border: 1px solid #b8975a;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 0.78rem;
+        letter-spacing: 0.4em;
+        text-transform: uppercase;
+        color: #b8975a;
+        text-decoration: none;
+        background: transparent;
+        transition: background 0.3s, color 0.3s;
+      "
+      onmouseover="this.style.background='#b8975a';this.style.color='#1a1510'"
+      onmouseout="this.style.background='transparent';this.style.color='#b8975a'"
+    >Confirmar asistencia</a>
+  </div>
+
+  <!-- Foto derecha -->
+  <div style="
+    position: relative;
+    min-height: 420px;
+    overflow: hidden;
+  ">
+    <!-- 🔁 REEMPLAZA con tu foto -->
+    <img src="DSC04640.jpg" alt="Gisell & Danel" style="
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      filter: brightness(0.88) sepia(0.1);
+    ">
+    <div style="
+      position: absolute; inset: 0;
+      background: linear-gradient(to left, rgba(14,12,10,0.1), rgba(14,12,10,0.45));
     "></div>
   </div>
 </div>
 
-<!-- ═══════════════ RSVP ═══════════════ -->
-<section id="rsvp">
-  <span class="label reveal">Confirmación</span>
-  <h2 class="event-title reveal reveal-delay-1">¿Nos acompañas?</h2>
-  <div class="divider reveal reveal-delay-2"></div>
-  <p class="nosotros-quote reveal reveal-delay-2" style="max-width:440px;margin:0 auto 2.5rem;text-align:center;">
-    Por favor confírmanos tu asistencia antes del <strong style="color:var(--cream)">15 de noviembre</strong>.
-  </p>
-  <!-- 🔁 REEMPLAZA el href con el link real de tu Google Forms -->
-  <a class="btn-location reveal reveal-delay-3" href="https://docs.google.com/forms/d/e/1FAIpQLSc_oaEW4eHknz4pP-UpKcSjgi4o2bqudM5rcQT-vAEzWrcQGg/viewform?usp=publish-editor" target="_blank" rel="noopener" style="font-size:0.8rem;padding:1rem 3rem;">
-    Confirmar asistencia
-  </a>
-</section>
+<!-- responsive mobile -->
+<style>
+  @media(max-width: 640px) {
+    #rsvp-grid { grid-template-columns: 1fr !important; }
+    #rsvp-foto { min-height: 55vw !important; order: -1; }
+    #rsvp-texto { border-right: none !important; border-bottom: 1px solid rgba(184,151,90,0.15) !important; }
+  }
+</style>
 
 <!-- ═══════════════ FOOTER ═══════════════ -->
 <footer>
